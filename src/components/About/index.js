@@ -1,5 +1,5 @@
 import React, { useEffect  } from 'react';
-import Programming from '../../img/programming-amico.svg';
+import Programming from '../../img/programming.svg';
 import './style.css';
 import ScrollReveal from 'scrollreveal';
 
