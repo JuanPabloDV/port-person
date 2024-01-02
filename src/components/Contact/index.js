@@ -21,7 +21,7 @@ const Contact = () => {
             <h2 className="title">Contato</h2>
             <div className="contact-wrapper">
                 <a href="https://github.com/JuanPabloDV" target='blank'><Icon className="card-icon" path={mdiGithub} title="GitHub"/></a>
-                <a href="https://github.com/JuanPabloDV" target='blank'><Icon className="card-icon" path={mdiLinkedin} title="Linkedin"/></a>
+                <a href="https://linkedin.com/in/juan-pablo-83261a236/" target='blank'><Icon className="card-icon" path={mdiLinkedin} title="Linkedin"/></a>
                 <a href="mailto: juangodoi.pablo@hotmail.com"><Icon className="card-icon" path={mdiEmail} title="Email"/></a>
                 <a href="https://wa.me/5547997511327" target='blank'><Icon className="card-icon" path={mdiWhatsapp} title="WhatsApp"/></a>
             </div>
