@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Icon from '@mdi/react';
-import { mdiVuejs, mdiLanguageJavascript, mdiLanguageHtml5, mdiBootstrap, mdiLanguageCss3, mdiLanguageTypescript, mdiReact, mdiLanguagePython } from '@mdi/js';
+import { mdiVuejs, mdiLanguageJavascript, mdiLanguageHtml5, mdiBootstrap, mdiLanguageCss3, mdiLanguageTypescript, mdiReact, mdiLanguagePython, mdiLanguageJava } from '@mdi/js';
 import './style.css';
 import ScrollReveal from 'scrollreveal';
 
@@ -64,6 +64,11 @@ const Skills = () => {
                     <div className="card-skill">
                         <Icon className="card-icon" path={mdiLanguagePython} title="Python"/>
                         <span>Python</span>
+                    </div>
+
+                    <div className="card-skill">
+                        <Icon className="card-icon" path={mdiLanguageJava} title="Java"/>
+                        <span>Java</span>
                     </div>
                 </div>
             </div>
