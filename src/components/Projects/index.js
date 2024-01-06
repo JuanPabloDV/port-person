@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
-import constructionImage from '../../img/construction.svg'
+// import constructionImage from '../../img/construction.svg'
 import './style.css'
 import ScrollReveal from 'scrollreveal';
+import apiImage from '../../img/api-image.svg'
+import Icon from '@mdi/react';
+import { mdiLanguageJavascript, mdiNodejs, mdiDatabase } from '@mdi/js';
 
 const Projects = () => {
     useEffect(() => {
@@ -25,7 +28,7 @@ const Projects = () => {
                         rewind: true,
                         width : 1200,
                         gap   : '1rem',
-                        perPage: 5,
+                        perPage: 1,
                         arrows: false,
                         pagination: false,
                         breakpoints: {
@@ -46,11 +49,27 @@ const Projects = () => {
                     }}>
                 <SplideSlide>
                     <div className="card-project">
+                        <img src={apiImage} alt="Imagem de api"></img>
+                        <h5>Api de filmes</h5>
+                        <span>Desenvolvida com intenção de aprender e melhorar conhecimento de criações de API conectadas com banco de dados.</span>
+                        <div className="card-tecnologic-wrapper">
+                            <Icon className="card-tecnologic-icon" path={mdiLanguageJavascript} title="Javascript"/>
+                            <Icon className="card-tecnologic-icon" path={mdiNodejs} title="NodeJS"/>
+                            <Icon className="card-tecnologic-icon" path={mdiDatabase} title="MongoDB"/>
+                        </div>
+                        <div className="project-button-wrapper">
+                            <button><a href="https://github.com/JuanPabloDV/starwars-api" target='blank'>GitHub</a></button>
+                        </div>
+                    </div>
+                </SplideSlide>
+                
+                {/* <SplideSlide>
+                    <div className="card-project">
                         <img src={constructionImage} alt="Imagem em construção"></img>
                         <span>Projeto em construção</span>
                         <div className="project-button-wrapper">
-                            <button>Ver</button>
-                            <button>GitHub</button>
+                            <button><a href="/">Ver</a></button>
+                            <button><a href="/">GitHub</a></button>
                         </div>
                     </div>
                 </SplideSlide>
@@ -59,8 +78,8 @@ const Projects = () => {
                         <img src={constructionImage} alt="Imagem em construção"></img>
                         <span>Projeto em construção</span>
                         <div className="project-button-wrapper">
-                            <button>Ver</button>
-                            <button>GitHub</button>
+                            <button><a href="/">Ver</a></button>
+                            <button><a href="/">GitHub</a></button>
                         </div>
                     </div>
                 </SplideSlide>
@@ -69,8 +88,8 @@ const Projects = () => {
                         <img src={constructionImage} alt="Imagem em construção"></img>
                         <span>Projeto em construção</span>
                         <div className="project-button-wrapper">
-                            <button>Ver</button>
-                            <button>GitHub</button>
+                            <button><a href="/">Ver</a></button>
+                            <button><a href="/">GitHub</a></button>
                         </div>
                     </div>
                 </SplideSlide>
@@ -79,21 +98,11 @@ const Projects = () => {
                         <img src={constructionImage} alt="Imagem em construção"></img>
                         <span>Projeto em construção</span>
                         <div className="project-button-wrapper">
-                            <button>Ver</button>
-                            <button>GitHub</button>
+                            <button><a href="/">Ver</a></button>
+                            <button><a href="/">GitHub</a></button>
                         </div>
                     </div>
-                </SplideSlide>
-                <SplideSlide>
-                    <div className="card-project">
-                        <img src={constructionImage} alt="Imagem em construção"></img>
-                        <span>Projeto em construção</span>
-                        <div className="project-button-wrapper">
-                            <button>Ver</button>
-                            <button>GitHub</button>
-                        </div>
-                    </div>
-                </SplideSlide>
+                </SplideSlide> */}
             </Splide>
         </section>
     )

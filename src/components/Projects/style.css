@@ -29,6 +29,7 @@
     color: #fff;
     padding: 3px 22px;
     transition: .3s;
+    display: flex;
 }
 
 .project-button-wrapper {
@@ -54,4 +55,35 @@
     .projects {
         padding-bottom: 70px;
     }
+}
+
+.card-project a {
+    text-decoration: none;
+    color: #fff;
+    height: 21px;
+}
+
+.card-project h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.card-project span {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.card-tecnologic-icon {
+    width: 30px;
+}
+
+.card-tecnologic {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-tecnologic-wrapper {
+    display: flex;
 }
