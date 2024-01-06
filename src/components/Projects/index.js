@@ -5,8 +5,9 @@ import '@splidejs/react-splide/css';
 import './style.css'
 import ScrollReveal from 'scrollreveal';
 import apiImage from '../../img/api-image.svg'
+import calcImage from '../../img/calc-imc.jpg'
 import Icon from '@mdi/react';
-import { mdiLanguageJavascript, mdiNodejs, mdiDatabase } from '@mdi/js';
+import { mdiLanguageJavascript, mdiNodejs, mdiReact, mdiLightningBolt, mdiDatabase } from '@mdi/js';
 
 const Projects = () => {
     useEffect(() => {
@@ -28,7 +29,7 @@ const Projects = () => {
                         rewind: true,
                         width : 1200,
                         gap   : '1rem',
-                        perPage: 1,
+                        perPage: 2,
                         arrows: false,
                         pagination: false,
                         breakpoints: {
@@ -47,6 +48,24 @@ const Projects = () => {
                             }
                       }
                     }}>
+                                        
+                <SplideSlide>
+                    <div className="card-project">
+                        <img src={calcImage} alt="Imagem da calculadora"></img>
+                        <h5>Calculadora IMC</h5>
+                        <span>Calculadora desenvolvida em React, através do Vite com intuito de melhorar e praticar habilidades em React</span>
+                        <div className="card-tecnologic-wrapper">
+                            <Icon className="card-tecnologic-icon" path={mdiLanguageJavascript} title="Javascript"/>
+                            <Icon className="card-tecnologic-icon" path={mdiReact} title="React"/>
+                            <Icon className="card-tecnologic-icon" path={mdiLightningBolt} title="Vite"/>
+                        </div>
+                        <div className="project-button-wrapper">
+                            <button><a href="https://imc-calcdv.vercel.app" target='blank'>Ver</a></button>
+                            <button><a href="https://github.com/JuanPabloDV/imc-calc" target='blank'>GitHub</a></button>
+                        </div>
+                    </div>
+                </SplideSlide>
+                
                 <SplideSlide>
                     <div className="card-project">
                         <img src={apiImage} alt="Imagem de api"></img>
@@ -62,18 +81,9 @@ const Projects = () => {
                         </div>
                     </div>
                 </SplideSlide>
-                
+
+
                 {/* <SplideSlide>
-                    <div className="card-project">
-                        <img src={constructionImage} alt="Imagem em construção"></img>
-                        <span>Projeto em construção</span>
-                        <div className="project-button-wrapper">
-                            <button><a href="/">Ver</a></button>
-                            <button><a href="/">GitHub</a></button>
-                        </div>
-                    </div>
-                </SplideSlide>
-                <SplideSlide>
                     <div className="card-project">
                         <img src={constructionImage} alt="Imagem em construção"></img>
                         <span>Projeto em construção</span>
