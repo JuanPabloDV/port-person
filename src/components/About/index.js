@@ -21,9 +21,9 @@ const About = () => {
         <div className="about-wrapper">
           <div className="about-left">
             <h2 className="title">Sobre mim</h2>
-            <p>Juan Pablo, 19 anos, cursando o 5º semestre de <strong>Sistemas da Informação</strong>. Possuo habilidades em desenvolvimento web front-end, experiência com <strong>Bootstrap</strong> para criar interfaces responsivas e <strong>Vue.js</strong> para a construção de aplicações dinâmicas. Além disso, estou em busca de aprimorar minhas habilidades no back-end com <strong>Node</strong> e <strong>Java</strong> , assim podendo futuramente me considerar um desenvolvedor Full-stack.</p>
+            <p>Desenvolvedor web, com experiência em front-end e tecnologias como <strong>Vue.js</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>, <strong>CSS</strong> e <strong>Bootstrap</strong>, adquirida ao longo de 10 meses de estágio. Atualmente, aprimoro conhecimentos em <strong>PHP</strong> e <strong>Java</strong> no setor de TI da prefeitura, e busco expandir minha atuação para o back-end, visando me tornar um desenvolvedor Full-stack.</p>
             <div>
-              <button><a href="https://drive.google.com/file/d/1UNR2-hpPu4GvLNi1O_atK2Q7P_FMAGwt/view?usp=sharing" target='_blank' rel='noopener noreferrer'>Currículo</a></button>
+              <button><a href="https://drive.google.com/file/d/1EyIMfdBcjGrkx4MEL36wshlfTfKWKuzE/view?usp=sharing" target='_blank' rel='noopener noreferrer'>Currículo</a></button>
             </div>
           </div>
   
