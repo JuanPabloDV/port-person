@@ -9,7 +9,7 @@
 .card-project img {
     width: 200px;
     padding-bottom: 30px;
-    max-height: 140px;
+    height: 140px;
 }
 
 .card-project {
@@ -29,7 +29,7 @@
     border-radius: 10px;
     color: #fff;
     padding: 3px 22px;
-    transition: .3s;
+    transition: 0.3s;
     display: flex;
 }
 
@@ -87,4 +87,107 @@
 
 .card-tecnologic-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.custom-modal {
+    background-color: rgb(15, 26, 32);
+    color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+}
+
+.custom-modal img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.custom-overlay {
+    background: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-modal h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.custom-modal p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.custom-modal a {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.custom-modal a:hover {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+/* Ícone de Fechar */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .close-button path {
+    transition: fill 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .close-button path {
+    fill: white !important;
+  }
+  
+  .close-button:hover path {
+    fill: var(--primary-color) !important;
+  }
+  
+
+@media (max-width: 500px) {
+    .custom-modal {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .custom-modal h2 {
+        font-size: 20px;
+    }
+
+    .custom-modal p {
+        font-size: 14px;
+    }
+
+    .custom-modal a {
+        padding: 8px 12px;
+    }
 }
