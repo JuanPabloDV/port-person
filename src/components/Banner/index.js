@@ -20,7 +20,7 @@ export default function Banner() {
                 <h3 style={{ paddingTop: '0', margin: '0', fontWeight: 'normal' }}>
                     <span style={{ color: 'transparent', fontWeight: 'bold' }}>
                         <Typewriter
-                            words={['Sou Desenvolvedor Front-end']}
+                            words={['Sou Desenvolvedor']}
                             loop={0}
                             cursor
                             cursorStyle='_'
